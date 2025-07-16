@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | Context Expert Agencies</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #eef2f3, #cfd9df);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 80px auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #555;
+      font-weight: 500;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007acc;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005f99;
+    }
+
+    .back-home {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .back-home a {
+      text-decoration: none;
+      color: #007acc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Attachment Application</h2>
+    <form action="#" method="post">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="e.g. Brian Mathew" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="e.g. brian@example.com" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. 0712xxxxxx" required>
+
+      <label for="course">Course</label>
+      <select id="course" name="course" required>
+        <option value="" disabled selected>Select your course</option>
+        <option value="Networking">Computer Networking</option>
+        <option value="Data">Data Management</option>
+        <option value="Web">Web Development</option>
+        <option value="Cyber">Cybersecurity</option>
+      </select>
+
+      <label for="institution">Institution</label>
+      <input type="text" id="institution" name="institution" placeholder="e.g. Kisii University" required>
+
+      <label for="message">Additional Message</label>
+      <textarea id="message" name="message" rows="3" placeholder="Optional..."></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+    <div class="back-home">
+      <p><a href="index.html">← Back to Home</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
